@@ -15,23 +15,26 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="index/home - Greg Thompson Jr.">
     <meta property="og:description" content="i write the present and the future.">
-    <meta property="og:image" content="https://gtjr.github.io/images/rw.jpg">
+    <meta property="og:image" content="https://gregthompsonjr.github.io/images/rw.jpg">
     <style>
         body {
             min-width: fit-content;
             margin: 0;
             padding: 0;
+            margin-right:2em;
             display: flex;
             justify-content: center;
             text-align: center;
             align-items: center;
             height: 100vh;
-            background-color: #0A0A0A;
-            color: #ebebeb;
+            /*background-color: #0A0A0A;*/
+            background-color: white;
+            /*color: #ebebeb;*/
+            color: #0a0a0a;
             font-size: medium;
             font-family: 'Courier New', Courier, monospace;
             font-weight: 200;
-            line-height: 3vh;
+            line-height: 1.45;
         }
 
         a {
@@ -43,13 +46,16 @@
             color: rgb(235, 174, 174);
         }
 
-        .robot img {
-            max-width: 250px;
-            max-height: 250px;
+        img {
+            max-width: 250px !important;
+            max-height: 250px !important;
+            width: auto !important;
+            height: auto !important;
+            padding-bottom: 2em;
         }
 
         .links ul {
-            text-align: ;
+            text-align: center;
             list-style: none;
             text-justify: center;
             text-align: center;
@@ -61,32 +67,41 @@
             display: inline-block;
             align-items: center;
             text-align: center;
-            font-size: small;
+            font-size: medium;
+            margin-left: .5em;
+            padding-right: 25px;
         }
 
-        .links .disabled {
+        .links li a:hover {
+            cursor:pointer;
+        }
+
+        .links > .disabled {
             color: #595959 !important;
             text-decoration: line-through;
+            opacity: 50%
+        }
+        .links > .disabled:hover {
+            opacity: 100%;
+            cursor:not-allowed;
         }
     </style>
 </head>
 
 <body>
     <div>
-        <img src="https://gtjr.github.io/images/rw.jpg" class="robot"></img></br>
+        <img src="https://gregthompsonjr.github.io/images/rw.jpg" class="robot"></img></br>
         afk. </br>
         probably writing the future.</br>
-        <a href="mailto:hi@gtjr.dev">> email < </a> </br>
-                <a href="https://gregtime.com/">> schedule time w/ me < </a> </br>
-                        <ul class="links">
-                            <li></li>
-                            <li><a href="https://twitter.com/gregthompsonjr">twitter</a></li>
-                            <li><a href="https://instagram.com/gregthompsonjr">instagram</a></li>
-                            <li><a href="https://linkedin.com/in/gregthompsonjr">linkedin</a></li>
-                            <li class="disabled" alt="blog link coming soon" aria-placeholder="coming soon">blog</li>
-                            <li class="disabled" alt="about page link coming soon" aria-placeholder="coming soon">about
-                            </li>
-                        </ul>
+        <a href="mailto:hi@gtjr.dev">> email me < </a> </br>
+        <a href="https://gregtime.com/">> schedule time w/ me < </a></br>
+        <ul class="links">
+            <li><a href="https://twitter.com/gregthompsonjr">X</a></li>
+            <li><a href="https://instagram.com/gregthompsonjr">instagram</a></li>
+            <li><a href="https://linkedin.com/in/gregthompsonjr">linkedin</a></li>
+            <li class="disabled" alt="blog link coming soon" aria-placeholder="coming soon">blog</li>
+            <li class="disabled" alt="about page link coming soon" aria-placeholder="coming soon">whoami?</li>
+        </ul>
     </div>
 </body>
 
