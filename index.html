@@ -18,7 +18,6 @@
     <meta property="og:image" content="https://gregthompsonjr.github.io/images/rw.jpg">
     <style>
         body {
-            min-width: fit-content;
             margin: 0;
             padding: 0;
             margin-right:2em;
@@ -34,12 +33,10 @@
             font-size: medium;
             font-family: 'Courier New', Courier, monospace;
             font-weight: 200;
-            line-height: 1.45;
         }
 
         a {
             color: inherit;
-            text-decoration-line: none;
         }
 
         a:hover {
@@ -54,13 +51,29 @@
             padding-bottom: 2em;
         }
 
+        .main-content {
+            max-width: 30em;
+        }
+
+        .intro-text-area {
+            padding-bottom:1em;
+        }
+
+        .main-links {
+            width: max-content;
+            text-align: left;
+        }
+        .main-links a {
+            text-decoration-line: none;
+            font-weight: 900;
+        }
+
         .links ul {
             text-align: center;
             list-style: none;
             text-justify: center;
             text-align: center;
             align-items: center;
-            /* min-width: max-content; */
         }
 
         .links li {
@@ -72,6 +85,9 @@
             padding-right: 25px;
         }
 
+        .links li a {
+            text-decoration-line: none;
+        }
         .links li a:hover {
             cursor:pointer;
         }
@@ -89,18 +105,24 @@
 </head>
 
 <body>
-    <div>
+    <div class="main-content">
         <img src="https://gregthompsonjr.github.io/images/rw.jpg" class="robot"></img></br>
-        afk. </br>
-        probably writing the future.</br>
-        <a href="mailto:hi@gtjr.dev">> email me < </a> </br>
-        <a href="https://gregtime.com/">> schedule time w/ me < </a></br>
+        <div class="intro-text-area">
+            afk. </br>
+            probably writing the future.</br>
+        </div>
+        <div class="main-links">
+            <a href="mailto:hi@gtjr.dev">> email me</a></br>
+            <a href="https://gregtime.com/">> schedule time w/ me</a></br>            
+        </div>
         <ul class="links">
-            <li><a href="https://twitter.com/gregthompsonjr">X</a></li>
-            <li><a href="https://instagram.com/gregthompsonjr">instagram</a></li>
-            <li><a href="https://linkedin.com/in/gregthompsonjr">linkedin</a></li>
-            <li class="disabled" alt="blog link coming soon" aria-placeholder="coming soon">blog</li>
-            <li class="disabled" alt="about page link coming soon" aria-placeholder="coming soon">whoami?</li>
+            <li><a href="https://twitter.com/gregthompsonjr">[X]</a></li>
+            <li><a href="https://instagram.com/gregthompsonjr">[instagram]</a></li>
+            <li><a href="https://linkedin.com/in/gregthompsonjr">[linkedin]</a></li>
+        </ul>
+        <ul class="links">
+            <li class="disabled" alt="blog link coming soon" aria-placeholder="coming soon">[blog]</li>
+            <li class="disabled" alt="about page link coming soon" aria-placeholder="coming soon">[whoami?]</li>
         </ul>
     </div>
 </body>
