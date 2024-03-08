@@ -57,6 +57,7 @@
 
         .intro-text-area {
             padding-bottom:1em;
+            text-align: left;
         }
 
         .main-links {
@@ -101,6 +102,19 @@
             opacity: 100%;
             cursor:not-allowed;
         }
+
+        @keyframes blink {
+            from, to { opacity: 1; }
+            50% { opacity: 0; }
+          }
+          
+          .cursor {
+            display:inline-block;
+            width: 1px;
+            /*background-color: currentColor;*/
+            line-height: inherit;
+            animation: blink 1s step-start 0s infinite;
+          }        
     </style>
 </head>
 
@@ -112,8 +126,8 @@
             probably writing the future.</br>
         </div>
         <div class="main-links">
-            <a href="mailto:hi@gtjr.dev">> email me</a></br>
-            <a href="https://gregtime.com/">> schedule time w/ me</a></br>            
+            <a href="mailto:hi@gtjr.dev">> email me<span class="cursor">|</span></a></br>
+            <a href="https://gregtime.com/">> schedule time w/ me<span class="cursor">|</span></a></br>            
         </div>
         <ul class="links">
             <li><a href="https://twitter.com/gregthompsonjr">[X]</a></li>
